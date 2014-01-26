@@ -1,10 +1,5 @@
 package com.chenjw.logger;
 
-import java.io.File;
-import java.io.IOException;
-
-import org.apache.commons.io.FileUtils;
-
 
 /**
  * 日志包装
@@ -42,6 +37,7 @@ public class Logger {
 
 	public void trace(Object key, Throwable cause) {
 		System.out.println(key);
+		cause.printStackTrace();
 	}
 
 	public void debug(Object key) {
@@ -50,6 +46,7 @@ public class Logger {
 
 	public void debug(Object key, Throwable cause) {
 		System.out.println(key);
+		cause.printStackTrace();
 	}
 
 	public void info(Object key) {
@@ -58,6 +55,7 @@ public class Logger {
 
 	public void info(Object key, Throwable cause) {
 		System.out.println(key);
+		cause.printStackTrace();
 	}
 
 	public void warn(Object key) {
@@ -66,6 +64,7 @@ public class Logger {
 
 	public void warn(Object key, Throwable cause) {
 		System.out.println(key);
+		cause.printStackTrace();
 	}
 
 	public void error(Object key) {
@@ -74,6 +73,7 @@ public class Logger {
 
 	public void error(Object key, Throwable cause) {
 		System.out.println(key);
+		cause.printStackTrace();
 	}
 
 	public void fatal(Object key) {
@@ -82,15 +82,7 @@ public class Logger {
 
 	public void fatal(Object key, Throwable cause) {
 		System.out.println(key);
+		cause.printStackTrace();
 	}
 
-	public static void main(String[] args) throws IOException{
-		for(Object obj:FileUtils.listFiles(new File("/home/chenjw/my_workspace/parser/core/java/com/chenjw/parse"), new String[]{"java"}, true)){
-			File f=(File)obj;
-			String s=FileUtils.readFileToString(f,"GBK");
-			FileUtils.writeStringToFile(f, s, "UTF-8");
-		}
-		
-	}
-	
 }

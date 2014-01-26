@@ -7,15 +7,15 @@ package com.chenjw.parse;
 import com.chenjw.parse.clean.JsoupVtdCleaner;
 
 /**
- * Ò»Ğ©½âÎö»·¾³µÄÈ«¾ÖÅäÖÃ
+ * ä¸€äº›è§£æç¯å¢ƒçš„å…¨å±€é…ç½®
  * 
  * 
  * @author junwen.chenjw
- * @version $Id: ParseConstants.java, v 0.1 2013Äê8ÔÂ16ÈÕ ÉÏÎç10:33:01 junwen.chenjw Exp $
+ * @version $Id: ParseConstants.java, v 0.1 2013å¹´8æœˆ16æ—¥ ä¸Šåˆ10:33:01 junwen.chenjw Exp $
  */
 public class ParseConfig {
-    /** ÊÇ·ñ½øĞĞxpathÂ·¾¶ÓÅ»¯ */
+    /** æ˜¯å¦è¿›è¡Œxpathè·¯å¾„ä¼˜åŒ– */
     public static boolean  isOptimizeXpath      = true;
-    /**xpathÒıÇæ */
+    /**xpathå¼•æ“ */
     public static Class<?> cleanerClass = JsoupVtdCleaner.class;
 }
