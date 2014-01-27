@@ -125,7 +125,6 @@ public class JsoupVtdCleaner implements Cleaner {
      * @return 是否支持
      */
     private static boolean isSupportAttr(String key) {
-        return "id".equals(key) || "class".equals(key) || "style".equals(key)
-               || "background".equals(key) || "src".equals(key) || "href".equals(key);
+        return true;
     }
 }

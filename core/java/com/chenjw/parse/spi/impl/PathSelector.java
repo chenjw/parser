@@ -38,6 +38,16 @@ public class PathSelector implements Selector {
     }
 
     /**
+     * 构造函数
+     * @param path 路径
+     */
+    public PathSelector(String path) {
+        this.path = path;
+    }
+
+    
+    
+    /**
      * 获得当前节点，如果有依赖的选择器就先执行依赖选择器
      * @param context 上下文
      * @param node 节点

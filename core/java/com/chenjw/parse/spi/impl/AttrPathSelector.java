@@ -17,6 +17,10 @@ public class AttrPathSelector extends PathSelector {
     public AttrPathSelector(String path, Selector depend) {
         super(path, depend);
     }
+    
+    public AttrPathSelector(String path) {
+        super(path);
+    }
 
     /** 
      * @see com.chenjw.parse.spi.impl.alipay.aggrbillinfo.core.design.parse.spi.tools.PathSelector#isAttr()
