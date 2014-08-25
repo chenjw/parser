@@ -13,5 +13,9 @@
 	<classpathentry kind="lib" path="/parser.lib/lib/commons-collections-3.1-sources.jar"/>
 	<classpathentry kind="lib" path="/parser.lib/lib/commons-collections-3.1.jar"/>
 	<classpathentry kind="lib" path="/parser.lib/lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="lib/aspriseOCR.jar"/>
+	<classpathentry kind="lib" path="lib/jai_imageio-1.1-alpha.jar"/>
+	<classpathentry kind="lib" path="lib/ij.jar"/>
+	<classpathentry kind="lib" path="lib/xercesImpl-2.11.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
