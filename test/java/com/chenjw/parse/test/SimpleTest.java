@@ -65,8 +65,13 @@ public class SimpleTest {
 	public void doParse() throws Exception {
 		String html = loadPage();
 		System.out.println("html:" + html);
-		Map<String, Object> result = parseEngine.parse(html);
-		System.out.println("result:" + result);
+		long start=System.currentTimeMillis();
+		for(int i=0;i<100;i++){
+			Map<String, Object> result = parseEngine.parse(html);
+			System.out.println("result:" + result);
+		}
+		System.out.println("cost:"+(System.currentTimeMillis()-start)/100+"ms");
+		
 	}
 
 	public static void main(String[] args) throws Exception {
